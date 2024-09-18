@@ -6,6 +6,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Pp]ackage[Cc]ache/
+/[Ss]hader[Cc]ache/
 
 # PackageCache 무시 추가
 /[Pp]ackages/*/PackageCache/
