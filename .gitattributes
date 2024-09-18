@@ -5,3 +5,6 @@
 *.shadersubgraph text
 *.shadergraph text
 *.asset binary
+
+# .gitignore 파일에 대해 LF 줄바꿈 유지
+*.gitignore text eol=lf
