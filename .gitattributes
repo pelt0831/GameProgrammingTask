@@ -1,10 +1,9 @@
 # 기본 설정
 * text=auto
-
 # 특정 파일 형식 추가
 *.shadersubgraph text
 *.shadergraph text
 *.asset binary
-
 # .gitignore 파일에 대해 LF 줄바꿈 유지
 *.gitignore text eol=lf
+Assets/CubexCube[[:space:]]-[[:space:]]Free[[:space:]]City[[:space:]]Pack[[:space:]]I/* filter=lfs diff=lfs merge=lfs -text
