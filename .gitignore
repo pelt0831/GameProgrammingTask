@@ -50,3 +50,6 @@ ExportedObj/
 *.aab
 *.unitypackage
 *.app
+
+/Packages/
+/[Pp]ackage[Cc]ache/
