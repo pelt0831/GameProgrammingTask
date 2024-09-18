@@ -1,0 +1,7 @@
+# 기본 설정
+* text=auto
+
+# 특정 파일 형식 추가
+*.shadersubgraph text
+*.shadergraph text
+*.asset binary
