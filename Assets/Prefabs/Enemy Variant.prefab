@@ -157,6 +157,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4132312772176831909, guid: 64b182395c0b6744a920c74bce3ece13,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4176553025200046990, guid: 64b182395c0b6744a920c74bce3ece13,
         type: 3}
       propertyPath: m_Layer
@@ -401,15 +406,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4132312772176831909, guid: 64b182395c0b6744a920c74bce3ece13,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1459514566071234693}
-    - targetCorrespondingSourceObject: {fileID: 4132312772176831909, guid: 64b182395c0b6744a920c74bce3ece13,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7614097281470272935}
     - targetCorrespondingSourceObject: {fileID: 4132312772176831909, guid: 64b182395c0b6744a920c74bce3ece13,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -4144864126138307221}
+    - targetCorrespondingSourceObject: {fileID: 4132312772176831909, guid: 64b182395c0b6744a920c74bce3ece13,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6400967129422866506}
   m_SourcePrefab: {fileID: 100100000, guid: 64b182395c0b6744a920c74bce3ece13, type: 3}
 --- !u!1 &2803333713303162946 stripped
 GameObject:
@@ -429,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edefbf92624a099439811b44955520b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 15
+  delay: 30
 --- !u!136 &180020904983638471
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -480,20 +485,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1459514566071234693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2803333713303162946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579ac6712d0c8c34bb2ebc96919e9d44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  changeDirectionInterval: 2
 --- !u!114 &7614097281470272935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,3 +510,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec87c85e7fc9d3f44b53961e186c9635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathEffect: {fileID: 7449363098383361750, guid: 7fe2dbac9bda1484d97237407d3f6042,
+    type: 3}
+--- !u!114 &-6400967129422866506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2803333713303162946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b28f6a862c9ec45a8603ec6b9845e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  baseTarget: {fileID: 7258422322516721221, guid: c253645c1ba658047b0dd87da8bffc56,
+    type: 3}
+  stopTime: 1
+  moveTime: 3
+  detectionRange: 0
